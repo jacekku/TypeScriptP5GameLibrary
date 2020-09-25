@@ -1,6 +1,6 @@
 {
   "name": "@jacekku/library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "game lib based on p5.js",
   "main": "index.js",
   "author": "Jacek Wyroba",

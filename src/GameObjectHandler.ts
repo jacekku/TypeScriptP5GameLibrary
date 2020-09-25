@@ -18,7 +18,8 @@ export class GameObjectHandler {
   }
   tick() {
     this.objects.forEach((obj) => {
-      obj.show ? obj.tick() : null;
+      obj.tick ? obj.tick() : null;
+      obj.superTick ? obj.superTick() : null;
     });
   }
 

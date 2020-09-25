@@ -18,7 +18,9 @@ export class GameObject {
     const img: p5.Image = GraphicsHandler.instance.getImage("no_texture");
     p.image(img, this.x, this.y);
   }
-  tick() {
+  tick() {}
+
+  superTick() {
     this.age += 1;
   }
 }
