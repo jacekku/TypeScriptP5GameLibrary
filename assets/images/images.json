@@ -1,0 +1,11 @@
+{
+    "images": [
+        {
+            "name": "no_texture",
+            "file": "assets/images/no_texture.png",
+            "stages": 1,
+            "stageWidth": 16,
+            "stageHeight": 16
+        }
+    ]
+}
