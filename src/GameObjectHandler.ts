@@ -16,10 +16,10 @@ export class GameObjectHandler {
       obj.show ? obj.show(p) : null;
     });
   }
-  tick() {
+  tick(p: p5.Graphics) {
     this.objects.forEach((obj) => {
-      obj.tick ? obj.tick() : null;
-      obj.superTick ? obj.superTick() : null;
+      obj.tick ? obj.tick(p) : null;
+      obj.superTick ? obj.superTick(p) : null;
     });
   }
 
