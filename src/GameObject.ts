@@ -23,4 +23,8 @@ export class GameObject {
   superTick(p: p5.Graphics) {
     this.age += 1;
   }
+
+  destroy() {
+    GameObjectHandler.instance.removeObject(this)
+  }
 }
