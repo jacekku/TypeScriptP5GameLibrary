@@ -7,6 +7,7 @@ export class GameObjectHandler {
 
   addObject(object: GameObject) {
     this.objects.push(object);
+    this.objects = this.sortByZAxis(this.objects)
   }
   removeObject(object: GameObject) {
     this.objects = this.objects.filter((obj) => obj !== object);
@@ -28,5 +29,9 @@ export class GameObjectHandler {
       GameObjectHandler.singleton = new GameObjectHandler();
     }
     return GameObjectHandler.singleton;
+  }
+
+  sortByZAxis(objects: GameObject[]) {
+    return objects.sort((a,b)=> b.zLevel - a.zLevel)
   }
 }

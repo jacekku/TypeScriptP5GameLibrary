@@ -6,11 +6,12 @@ export class GameObject {
   x: number;
   y: number;
   age: number;
-
+  zLevel: number;
   constructor(x: number = -Infinity, y: number = -Infinity) {
     this.x = x;
     this.y = y;
     this.age = 0;
+    this.zLevel = 0;
     GameObjectHandler.instance.addObject(this);
   }
 
