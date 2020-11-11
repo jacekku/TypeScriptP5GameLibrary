@@ -12,12 +12,12 @@ export class GameObjectHandler {
   removeObject(object: GameObject) {
     this.objects = this.objects.filter((obj) => obj !== object);
   }
-  show(p: p5.Graphics) {
+  show(p: p5) {
     this.objects.forEach((obj) => {
       obj.show ? obj.show(p) : null;
     });
   }
-  tick(p: p5.Graphics) {
+  tick(p: p5) {
     this.objects.forEach((obj) => {
       obj.tick ? obj.tick(p) : null;
       obj.superTick ? obj.superTick(p) : null;

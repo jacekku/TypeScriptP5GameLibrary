@@ -15,13 +15,13 @@ export class GameObject {
     GameObjectHandler.instance.addObject(this);
   }
 
-  show(p: p5.Graphics) {
+  show(p: p5) {
     const img: p5.Image = GraphicsHandler.instance.getImage("no_texture");
     p.image(img, this.x, this.y);
   }
-  tick(p: p5.Graphics) {}
+  tick(p: p5) {}
 
-  superTick(p: p5.Graphics) {
+  superTick(p: p5) {
     this.age += 1;
   }
 
