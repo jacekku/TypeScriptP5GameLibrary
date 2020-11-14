@@ -11,3 +11,5 @@ export { EventType } from "./src/enums/EventType";
 export { ExtendedEvent } from "./src/ExtendedEvent";
 export { preload } from "./src/Preload";
 export { setupInputs } from "./src/input/SetupInputs";
+export { Button } from "./src/Button";
+export { ZLayers} from "./src/enums/ZLayers"

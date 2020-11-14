@@ -22,9 +22,7 @@
 //     )
 //     return out
 // }
-// function pointInRect(x1,y1,x2,y2,w,h){
-//     return x1 > x2 && x1 < x2 + w && y1 > y2 && y1 < y2 + h 
-// }
+
 
 // function mouseInSpaceObject(x1,y1,spaceObject){
 //     const {x,y,size} = spaceObject;
@@ -34,6 +32,13 @@
 // function pointInCircle(x1, y1, x2, y2, r) {
 //     return dist(x1, y1, x2, y2) < r
 // }
+
+
+export function pointInRect(checkingX: number,checkingY: number, rectX: number, rectY: number,rectWidth: number,rectHeight: number){
+    return checkingX > rectX && checkingX < rectX + rectWidth && checkingY > rectY && checkingY < rectY + rectHeight 
+}
+
+
 export function randomInt(min:number = 0, max?:number):number{
     if(!max){
         max = min
