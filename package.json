@@ -7,13 +7,15 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@types/p5": "^0.9.0",
     "chai": "^4.2.0",
     "mocha": "6.2.2",
     "p5": "^0.9.0"
   },
   "scripts": {
-    "test": "mocha */*.spec.js",
-    "build": "tsc ./src"
+    "test": "mocha test/**/*.spec.ts",
+    "build": "tsc ./src/**/*.ts"
+  },
+  "devDependencies": {
+    "@types/p5": "^0.9.0"
   }
 }
